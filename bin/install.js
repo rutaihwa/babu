@@ -91,10 +91,9 @@ Cli.main(function (args, options) {
     // Update package.json
     // npm install
 
-    if (args.length < 2) {
-
+    if (args.length !== 1) {
         return Cli.error('Invalid number of arguments' + '\n' +
-                         'Usage: babu init <myApp>');
+                         'Usage: babu <myApp>');
     }
 
     var Generate = function () {
