@@ -30,7 +30,7 @@ Internals.updateProject = function (name, destination) {
 
     // Update app package.json
 
-    var Package = Fs.readJsonSync(Path.join(destination, '.json'));
+    var Package = Fs.readJsonSync(Path.join(destination, 'package.json'));
 
     Cli.progress(0.3);
 
@@ -39,6 +39,7 @@ Internals.updateProject = function (name, destination) {
     Package.description = 'New cool hapi application';
     Package.keywords = [name, 'babu'];
     Package.author = process.env.USER;
+    Package.email = process.env.USER + '@someservice.js';
 
     // Delete generator dependencies & stuff
 
@@ -51,15 +52,15 @@ Internals.updateProject = function (name, destination) {
 
     Internals.dependencies.forEach(function (dep) {
 
-        if (Package.dependencies.hasOwnProperty(dep)) {
+        if (Package.devDependencies.hasOwnProperty(dep)) {
 
-            delete Package.dependencies[dep];
+            delete Package.devDependencies[dep];
         }
     });
 
     Cli.progress(0.6);
 
-    Fs.writeJsonSync(Path.join(dest, 'package.json'), Package);
+    Fs.writeJsonSync(Path.join(destination, 'package.json'), Package);
     Cli.progress(0.8);
 };
 
@@ -68,13 +69,13 @@ Internals.installDependencies = function (destination, callback) {
     Cli.info('Downloading dependencies...');
 
     // Clear git
-    Fs.removeSync(Path.join(dest, '.git'));
+    Fs.removeSync(Path.join(destination, '.git'));
 
     // Clean Generator & other bins
-    Fs.removeSync(Path.join(dest, 'bin'));
+    Fs.removeSync(Path.join(destination, 'bin'));
 
     // Install dependencies
-    var cmd = 'cd ' + destination + ' && npm install && git init . && git add . && git commit -m "Initial commit"';
+    var Cmd = 'cd ' + destination + ' && npm install && git init . && git add . && git commit -m "Initial commit"';
 
     Cli.exec(Cmd, callback, callback);
 };
@@ -107,9 +108,9 @@ Cli.main(function (args, options) {
         Cli.ok('App Name: ' + App);
         Cli.ok('App folder: ' + Destination);
 
-        Cli.info('Checking app folder...');
+        Cli.info('Checking app folder ...');
 
-        Fs.remove(dest, function (err) {
+        Fs.remove(Destination, function (err) {
 
             // Clear destination
 
@@ -140,7 +141,7 @@ Cli.main(function (args, options) {
                     }
 
                     Cli.progress(1.0);
-                    Cli.spinner('All good now start coding :)', true);
+                    Cli.spinner('Wow, your app is good now start coding :)', true);
                 });
             });
         });
