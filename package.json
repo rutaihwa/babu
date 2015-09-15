@@ -1,0 +1,49 @@
+{
+  "name": "babu",
+  "version": "0.0.1",
+  "description": "Minimalistic way to start building cool stuff with hapijs",
+  "keywords": [
+    "Hapijs",
+    "Babu",
+    "Generator",
+    "Hapijs generator"
+  ],
+  "main": "lib/start.js",
+  "scripts": {
+    "test": "node node_modules/lab/bin/lab -a code -t 100 -L -v",
+    "test-cov-html": "node node_modules/lab/bin/lab -a code -r html -o coverage.html",
+    "start": "node lib/start.js"
+  },
+  "bugs": {
+    "url": "https://https://github.com/rutaihwa/babu/issues"
+  },
+  "author": "Rutaihwa",
+  "email": "rutaihwa@gmail.com",
+  "license": "MIT",
+  "homepage": "http://github.com/rutaihwa/babu#readme",
+  "repository": {
+      "url": "https://github.com/rutaihwa/babu.git"
+  },
+  "dependencies": {
+    "hapi": "9.x.x",
+    "boom": "2.x.x",
+    "getconfig": "2.x.x",
+    "glue": "2.x.x",
+    "good": "6.x.x",
+    "good-console": "5.x.x",
+    "good-file": "5.x.x",
+    "hoek": "2.x.x",
+    "inert": "3.0.1",
+    "jade": "1.x.x",
+    "vision": "3.x.x"
+  },
+  "devDependencies": {
+    "cli": "0.10.0",
+    "fs-extra": "0.24.0",
+    "code": "1.x.x",
+    "lab": "5.x.x"
+  },
+  "engines": {
+    "node": ">=0.10.35"
+  }
+}

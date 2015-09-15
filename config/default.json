@@ -1,0 +1,6 @@
+{
+    "paths": {
+	"public": "assets",
+	"views": "views"
+    }
+}
