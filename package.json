@@ -14,14 +14,22 @@
     "test-cov-html": "node node_modules/lab/bin/lab -a code -r html -o coverage.html",
     "start": "node lib/start.js"
   },
+  "bin": {
+      "babu": "./bin/install.js"
+  },
+  "files": [
+      "bin/install.js"
+  ],
   "bugs": {
     "url": "https://https://github.com/rutaihwa/babu/issues"
   },
+  "preferGlobal": true,
   "author": "Rutaihwa",
   "email": "rutaihwa@gmail.com",
   "license": "MIT",
   "homepage": "http://github.com/rutaihwa/babu#readme",
   "repository": {
+      "type": "git",
       "url": "https://github.com/rutaihwa/babu.git"
   },
   "dependencies": {
