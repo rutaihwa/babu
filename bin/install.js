@@ -52,9 +52,9 @@ Internals.updateProject = function (name, destination) {
 
     Internals.dependencies.forEach(function (dep) {
 
-        if (Package.devDependencies.hasOwnProperty(dep)) {
+        if (Package.dependencies.hasOwnProperty(dep)) {
 
-            delete Package.devDependencies[dep];
+            delete Package.dependencies[dep];
         }
     });
 
