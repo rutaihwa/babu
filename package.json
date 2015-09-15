@@ -1,6 +1,6 @@
 {
   "name": "babu",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Minimalistic way to start building cool stuff with hapijs",
   "keywords": [
     "Hapijs",
@@ -15,7 +15,7 @@
     "start": "node lib/start.js"
   },
   "bin": {
-      "babu": "./bin/install.js"
+      "babu init": "./bin/install.js"
   },
   "files": [
       "bin/install.js"
