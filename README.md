@@ -9,7 +9,7 @@ The template assumes `git`, `nodejs` or `iojs` are correctly installed.
 
 ```shell
 $ npm install -g babu
-$ babu init <myApp>
+$ babu <myApp>
 ```
 
 #### Application Structure
