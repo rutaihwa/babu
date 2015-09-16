@@ -145,8 +145,7 @@ Cli.main(function (args, options) {
 
                     Cli.progress(1.0);
                     Cli.spinner('Wow, your app is good now start coding :)', true);
-		    Cli.info('Start your app: npm start' + '\n' +
-			    'Run tests: npm test');
+                    Cli.spinner('Start your app: npm start' + '\n' + 'Run tests: npm test');
                 });
             });
         });
