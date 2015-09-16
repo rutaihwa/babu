@@ -1,6 +1,6 @@
 {
   "name": "babu",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Minimalistic way to start building cool stuff with hapijs",
   "keywords": [
     "Hapijs",
@@ -33,19 +33,8 @@
       "url": "https://github.com/rutaihwa/babu.git"
   },
   "dependencies": {
-    "hapi": "9.x.x",
-    "boom": "2.x.x",
-    "getconfig": "2.x.x",
-    "glue": "2.x.x",
-    "good": "6.x.x",
-    "good-console": "5.x.x",
-    "good-file": "5.x.x",
-    "hoek": "2.x.x",
-    "inert": "3.0.1",
-    "jade": "1.x.x",
-    "vision": "3.x.x",
-    "cli": "0.10.0",
-    "fs-extra": "0.24.0"
+    "cli": "0.10.X",
+    "fs-extra": "0.24.X"
   },
   "devDependencies": {
     "code": "1.x.x",
