@@ -21,13 +21,13 @@
       "bin/install.js"
   ],
   "bugs": {
-    "url": "https://https://github.com/rutaihwa/babu/issues"
+    "url": "https://github.com/rutaihwa/babu/issues"
   },
   "preferGlobal": true,
   "author": "Rutaihwa",
   "email": "rutaihwa@gmail.com",
   "license": "MIT",
-  "homepage": "http://github.com/rutaihwa/babu#readme",
+  "homepage": "https://github.com/rutaihwa/babu#readme",
   "repository": {
       "type": "git",
       "url": "https://github.com/rutaihwa/babu.git"
