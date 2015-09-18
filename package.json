@@ -1,6 +1,6 @@
 {
   "name": "babu",
-  "version": "0.0.6",
+  "version": "0.0.6-a",
   "description": "Minimalistic way to start building cool stuff with hapijs",
   "keywords": [
     "Hapijs",
@@ -18,7 +18,7 @@
       "babu": "./lib/install.js"
   },
   "files": [
-      "./lib/install.js"
+      "lib/install.js"
   ],
   "bugs": {
     "url": "https://github.com/rutaihwa/babu/issues"
