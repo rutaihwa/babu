@@ -13,42 +13,9 @@ $ npm install -g babu
 $ babu <myApp>
 ```
 
-#### Application Structure
+#### Scaffold initial code
+This version uses a minimalistic template [Babu barebones ](https://github.com/rutaihwa/babu-barebones)
 
-###### lib/
-
-    ----- index.js		// The server
-    ----- start.js		// The application entry point
-    ----- routes.js		// The application routes
-    ----- manifest.js		// The application manifest
-
-###### views/
-
-    ----- index.jade
-    
-
-###### config/
-
-    ---- default.json
-
-
-###### assets/
-
-    ----- images/	      // Images for your app
-    ----- styles/	      // Style and style related stuff
-    ----- scripts/	      // Your Js scripts
-    ----- vendors/	      // Third party libraries
-
-###### test/
-
-    ----- index.js		// Simple test
-
-###### Others
-    
-    ------ .gitignore		// files to be ignored by git
-    ------ .eslintrc		// Linting rules for js
-    ------ .eslintignore	// Files that should be ignored by lint
- 
 #### Contributing
 
 1. Fork this repo and make changes in your own fork.

@@ -8,17 +8,17 @@
     "Generator",
     "Hapijs generator"
   ],
-  "main": "lib/start.js",
+  "main": "./lib/install.js",
   "scripts": {
     "test": "node node_modules/lab/bin/lab -a code -t 100 -L -v",
     "test-cov-html": "node node_modules/lab/bin/lab -a code -r html -o coverage.html",
-    "start": "node lib/start.js"
+    "start": "node lib/install.js"
   },
   "bin": {
-      "babu": "./bin/install.js"
+      "babu": "./lib/install.js"
   },
   "files": [
-      "bin/install.js"
+      "./lib/install.js"
   ],
   "bugs": {
     "url": "https://github.com/rutaihwa/babu/issues"
